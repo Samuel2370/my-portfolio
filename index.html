@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df548c3300.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/logo.png" alt="" class="logo">-->
+            <div class="logo">
+                <a href="#"><span>ANUBODEM</span>SAMUEL</a>
+            </div>
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Passionate Cybersecurity Student</p>
+            <h1>Hi, I'm <span>Anubodem</span> <br> <span>Samuel</span> From Cameroon</h1>
+        </div>
+    </div>
+</div>
+
+<!--About section starts here-->
+
+<div id="about">
+    <div class="container">
+
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/samuel.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a creative and tech-driven individual with a passion for designing visually 
+                    engaging content and building clean, responsive websites. With a strong foundation 
+                    in graphic design and frontend development using HTML and CSS, I enjoy bringing ideas 
+                    to life through both artistic and technical skills.
+                    Beyond design, I am deeply passionate about cybersecurity — committed to understanding
+                    how to protect digital systems, secure information, and make the online space safer for everyone. 
+                    I see technology not just as a tool, but as a way to create impact, solve problems, and inspire innovation.
+                    My goal is to further develop my skills, gain advanced knowledge in cybersecurity, 
+                    and contribute meaningfully to the global tech community</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Graphics Designer</li>
+                            <li><span>Web Development</span><br>Frontend Development</li>
+                            <li><span>Computer hardware and software Trouble shooting</span><br>Fixing hardware and software problems.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024- Current</span><br>Community tech support volunteer</li>
+                            <li><span>2024 - 2025</span><br>Cyber safety awareness campaign</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>GCE Ordinary Level</li>
+                            <li><span>2022</span><br>GCE Advance Level</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--About section ends here-->
+
+
+<!--Service section starts here-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Strength</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Good at using HTML and CSS to create simple yet functional websites, 
+                    with a focus on clean layouts and a visually appealing user experience</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Graphics Design</h2>
+                <p>Creative and detail-oriented, able to produce visually appealing designs 
+                    that effectively communicate ideas and enhance project impact</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-ethernet"></i>
+                <h2>Hardware Troubleshooting</h2>
+                <p>Skilled at identifying, diagnosing, and resolving common computer hardware problems. 
+                    Able to ensure devices operate smoothly and efficiently, minimizing downtime and 
+                    improving overall system performance.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Service section ends here-->
+
+<!--Portfolio starts here-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/network2.svg" alt="">
+                <div class="layer">
+                    <h3>Network Security basic simulation</h3>
+                    <p>Designed a small scaled computer network in a virtual lab and configured basic
+                    firewall settings to block unauthorized access.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Python.jpg" alt="">
+                <div class="layer">
+                    <h3>Python password generator script</h3>
+                    <p>Create a simple python scripts that generate strong, random password to 
+                    promote better online security.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/troubleshoot.jpg" alt="">
+                <div class="layer">
+                    <h3>Computer Troubleshooting</h3>
+                    <p>Helped students and local residents fix hardware and software issues, 
+                    including virus removal and software installation.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--Portfolio ends here-->
+
+
+<!--Contact starts here-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> ndemafie@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> (237) 671-966-198</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © A Samuel. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+<!--Contact ends here-->
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
